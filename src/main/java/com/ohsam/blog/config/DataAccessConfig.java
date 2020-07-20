@@ -1,4 +1,5 @@
 package com.ohsam.blog.config;
+
 import javax.sql.DataSource;
 
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -10,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @Configuration
-@MapperScan(basePackages = "com.cos.blog.repository")
+@MapperScan(basePackages = "com.ohsam.blog.repository")
 public class DataAccessConfig {
 
     @Bean

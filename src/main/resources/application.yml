@@ -14,3 +14,4 @@ spring:
     username: spring
     password: bitc5600
     driver-class-name: com.mysql.cj.jdbc.Driver 
+    

@@ -1,5 +1,8 @@
 package com.ohsam.blog.repository;
 
-public interface UserRepository {
+import com.ohsam.blog.model.User;
 
+public interface UserRepository {
+	public void save(User user);
+	public User login(User user);
 }

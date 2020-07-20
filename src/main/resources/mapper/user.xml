@@ -4,4 +4,11 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ohsam.blog.repository.UserRepository">
 
+<insert id="save">
+	INSERT INTO user(username,password,email,createDate) values (#{username},#{password},#{email},now())
+</insert>
+
+<select id="login" resultType="com.ohsam.blog.model.User">
+	SELECT id, username, email, profile, createDate FROM user WHERE username = #{username} AND password = #{password}
+</select>
 </mapper>
